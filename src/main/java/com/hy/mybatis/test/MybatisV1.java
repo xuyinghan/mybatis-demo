@@ -27,6 +27,7 @@ public class MybatisV1 {
     public void test() {
         Map<String,Object> map = new HashMap<>();
         map.put("username","王五");
+        map.put("id",1);
         List<User> queryListByname = selectList("queryListByname", map);
 
         System.out.println(queryListByname);
